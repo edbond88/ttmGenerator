@@ -1,6 +1,6 @@
-####Easy generation of NMEA 0183 TTM sequences based on target coordinates and receiver coordinates
+## Easy generation of NMEA 0183 TTM sequences based on target coordinates and receiver coordinates
 
-#####How it works
+### How it works
 
 The service generates a **Target Distance** and **Bearing from own ship**. 
 
@@ -10,7 +10,7 @@ The remaining parameters use the default values.
 
 Checksum **not** generated.
 
-#####TTM  = [Tracked Target Message](http://www.catb.org/gpsd/NMEA.html#_ttm_tracked_target_message)
+### TTM  = [Tracked Target Message](http://www.catb.org/gpsd/NMEA.html#_ttm_tracked_target_message)
 
 Data associated with a tracked target relative to own ship's position.
 
@@ -35,5 +35,6 @@ $RATTM,02,6.38,322.1,T,0.92,186.3,T,4.25,320.8,N,L,,M*0D
 14 = Checksum
 ```
 
-###Attention!
+### Attention!
+
 With each new target, the creation time increases. This is a bug.
