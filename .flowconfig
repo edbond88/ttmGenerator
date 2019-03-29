@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/.*
+./src/helpers/registerServiceWorker.js
+
+[include]
+
+[lints]
+
+[options]
+emoji=true
+suppress_comment=\\(.\\|\n\\)*\\$flow-disable-line
+all=true
+
+[strict]
