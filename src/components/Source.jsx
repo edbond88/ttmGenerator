@@ -47,7 +47,7 @@ type Props = {
 const Source = ({ lat, lon, onChange }: Props) => {
   const handleChangeInput = event => {
     const { name, value }: { name: CoordsNameType, value: string } = event.target
-    const numberValue: number = parseInt(value, 10)
+    const numberValue: number = value
     onChange(name, numberValue)
   }
 

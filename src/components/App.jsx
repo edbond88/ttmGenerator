@@ -22,7 +22,7 @@ const trackInit: TrackType[] = [
   {
     id: shortid.generate(),
     lat: 40.31875441395524,
-    lon: -73.77966225350048,
+    lon: 46.376383,
     speed: 7,
     rotate: 45,
     uid: '1',
@@ -39,7 +39,7 @@ const App = () => {
   }
 
   const handleSourceChange = (name: CoordsNameType, value: number): void => {
-    const newSource: CoordsType = { ...source, lon: value }
+    const newSource: CoordsType = { ...source, [name]: value }
     setSource(newSource)
   }
 
